@@ -1,0 +1,98 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\pratica_2\simulation\modelsim
+Ecomp_1
+Z1 w1589906775
+Z2 dG:\pratica_2\simulation\modelsim
+Z3 8G:/pratica_2/pratica_2.vhd
+Z4 FG:/pratica_2/pratica_2.vhd
+l0
+L4
+V<nMRZ8H5@DOj<a_zH?ZdS0
+!s100 bIPH`nH^EcLK9Lo9z3oMl0
+Z5 OV;C;10.1b;51
+31
+!i10b 1
+Z6 !s108 1589906997.057000
+Z7 !s90 -reportprogress|300|-93|-work|work|G:/pratica_2/pratica_2.vhd|
+Z8 !s107 G:/pratica_2/pratica_2.vhd|
+Z9 o-93 -work work -O0
+Z10 tExplicit 1
+Afluxo_dados
+DEx4 work 6 comp_1 0 22 <nMRZ8H5@DOj<a_zH?ZdS0
+l10
+L9
+V^[jQR8HUg[=MjkIGeEmXo3
+!s100 MYkaf2c7?gHlGQm<c`ofj0
+R5
+31
+!i10b 1
+R6
+R7
+R8
+R9
+R10
+Ecomp_2
+R1
+R2
+R3
+R4
+l0
+L15
+V8eV<FBH7fF^l1VcbELETL2
+!s100 c?^4jYhH>]AJ0D?0WlEMA1
+R5
+31
+!i10b 1
+R6
+R7
+R8
+R9
+R10
+Afluxo_dados
+DEx4 work 6 comp_2 0 22 8eV<FBH7fF^l1VcbELETL2
+l21
+L20
+VnhQeI^^6QG=n81z^>=kHB3
+!s100 GRO;JO224PDTC`ODgQS1z0
+R5
+31
+!i10b 1
+R6
+R7
+R8
+R9
+R10
+Epratica_2
+R1
+R2
+R3
+R4
+l0
+L27
+VQ?ie``6NO9XC;j`_Pa5KW2
+!s100 [==>o:DM1jZ1b2:Mhno6A0
+R5
+31
+!i10b 1
+R6
+R7
+R8
+R9
+R10
+Afluxo_dados
+DEx4 work 9 pratica_2 0 22 Q?ie``6NO9XC;j`_Pa5KW2
+l45
+L32
+VUF`BO9Oj4K26TY5_[aKb;2
+!s100 dbEnXVY>49bPbBjnnPj1c1
+R5
+31
+!i10b 1
+R6
+R7
+R8
+R9
+R10

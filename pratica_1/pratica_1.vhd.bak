@@ -1,0 +1,11 @@
+ENTITY pratica_1 IS
+ PORT(
+	a, b, c, d : IN BIT; 
+	y : OUT BIT          
+ );
+END ENTITY pratica_1 ;
+
+ARCHITECTURE fluxo_dados OF pratica_1 IS
+ BEGIN
+	y <= (a XOR b) XOR (c XOR d);
+ END ARCHITECTURE fluxo_dados; 

@@ -1,0 +1,37 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do codifcador_bcd_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/codificador_bcd/codifcador_bcd.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Compiling entity codifcador_bcd
+# -- Compiling architecture comportamental of codifcador_bcd
+# 
+vsim work.codifcador_bcd
+# vsim work.codifcador_bcd 
+# Loading std.standard
+# Loading work.codifcador_bcd(comportamental)
+add wave -position insertpoint  \
+sim:/codifcador_bcd/entrada
+add wave -position insertpoint  \
+sim:/codifcador_bcd/saida
+force -freeze sim:/codifcador_bcd/entrada(3) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/codifcador_bcd/entrada(2) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/codifcador_bcd/entrada(1) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/codifcador_bcd/entrada(0) 0 0, 1 {50 ps} -r 100
+run
+force -freeze sim:/codifcador_bcd/entrada(3) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/codifcador_bcd/entrada(2) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/codifcador_bcd/entrada(1) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/codifcador_bcd/entrada(0) 1 0, 0 {50 ps} -r 100
+run
+run

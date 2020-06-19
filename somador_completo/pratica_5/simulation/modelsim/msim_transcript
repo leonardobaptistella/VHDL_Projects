@@ -1,0 +1,40 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pratica_5_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/somador_completo/pratica_5/pratica_5.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pratica_5
+# -- Compiling architecture a of pratica_5
+# 
+vsim work.pratica_5
+# vsim work.pratica_5 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pratica_5(a)
+add wave -position insertpoint  \
+sim:/pratica_5/a
+add wave -position insertpoint  \
+sim:/pratica_5/b
+add wave -position insertpoint  \
+sim:/pratica_5/s
+add wave -position insertpoint  \
+sim:/pratica_5/cf
+force -freeze sim:/pratica_5/a 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_5/b 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/pratica_5/s 1 0, 0 {50 ps} -r 100
+run
+run

@@ -1,0 +1,36 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\codificador_bcd\simulation\modelsim
+Ecodifcador_bcd
+Z1 w1591293025
+Z2 dG:\codificador_bcd\simulation\modelsim
+Z3 8G:/codificador_bcd/codifcador_bcd.vhd
+Z4 FG:/codificador_bcd/codifcador_bcd.vhd
+l0
+L1
+V?37WE]X9Z^h:>QH8T5U432
+!s100 FW@Da6lP3Ri:0e6B5f6^j3
+Z5 OV;C;10.1b;51
+31
+!i10b 1
+Z6 !s108 1591293296.914000
+Z7 !s90 -reportprogress|300|-93|-work|work|G:/codificador_bcd/codifcador_bcd.vhd|
+Z8 !s107 G:/codificador_bcd/codifcador_bcd.vhd|
+Z9 o-93 -work work -O0
+Z10 tExplicit 1
+Acomportamental
+DEx4 work 14 codifcador_bcd 0 22 ?37WE]X9Z^h:>QH8T5U432
+l7
+L6
+VceX>DzD^6JlTae6z3kK;h0
+!s100 3zILeaM2197BCPCEV3Q;93
+R5
+31
+!i10b 1
+R6
+R7
+R8
+R9
+R10

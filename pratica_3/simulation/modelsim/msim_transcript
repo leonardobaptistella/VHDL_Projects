@@ -1,0 +1,45 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pratica_3_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/pratica_3/pratica_3.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Compiling entity pratica_3
+# -- Compiling architecture fluxo_dados of pratica_3
+# 
+vsim work.pratica_3
+# vsim work.pratica_3 
+# Loading std.standard
+# Loading work.pratica_3(fluxo_dados)
+add wave -position insertpoint  \
+sim:/pratica_3/E
+add wave -position insertpoint  \
+sim:/pratica_3/E(2)
+add wave -position insertpoint  \
+sim:/pratica_3/E(1)
+add wave -position insertpoint  \
+sim:/pratica_3/E(0)
+add wave -position insertpoint  \
+sim:/pratica_3/S(1)
+add wave -position insertpoint  \
+sim:/pratica_3/S(0)
+force -freeze sim:/pratica_3/E(2) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_3/E(1) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pratica_3/E(0) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_3/S(1) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_3/S(0) 1 0, 0 {50 ps} -r 100
+run
+force -freeze sim:/pratica_3/E(2) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pratica_3/E(1) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_3/E(2) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pratica_3/E(0) 0 0, 1 {50 ps} -r 100
+run

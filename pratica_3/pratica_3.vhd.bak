@@ -1,0 +1,16 @@
+--Leonardo Baptistella n°usp: 10821172
+
+-- Usando With-Select
+ENTITY pratica_3 IS
+ PORT( E : IN BIT_VECTOR (2 DOWNTO 0);
+ S : OUT BIT_VECTOR (1 DOWNTO 0));
+ END ENTITY pratica_3;
+
+ ARCHITECTURE fluxo_dados OF pratica_3 IS
+ BEGIN
+ WITH E SELECT
+ S <= "00" WHEN "000",
+ "01" WHEN "001",
+ "10" WHEN "010"|"011",
+ "11" WHEN OTHERS;
+ END ARCHITECTURE fluxo_dados ;

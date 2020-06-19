@@ -1,0 +1,24 @@
+ENTITY dec_prior1 IS
+	PORT(E : IN BIT_VECTOR(2 DOWNTO 0);
+	S : OUT BIT_VECTOR(1 DOWNTO 0));
+END dec_prior1;
+
+ARCHITECTURE comportamental OF dec_prior1 IS
+BEGIN --início da arquitetura
+PROCESS ( E )
+BEGIN -- início do process
+IF E >= "100" THEN -- se a entrada é maior ou igual a 4 então S = 3
+S <= "11“ ;
+ELSE -- se a entrada é maior ou igual a 2 e menor ou igual a 3, então S = 2
+IF ( E <= "011") AND ( E >= "010") THEN
+S <= "10“ ;
+ELSE
+IF E = "001" THEN –-se a entrada é igual a 1 a saida recebe 1
+S <= "01“ ;
+ELSE
+S <= "00"; –-se a entrada é igual a 0 a saida recebe 0
+END IF;
+END IF;
+END IF;
+END PROCESS;
+END comportamental;

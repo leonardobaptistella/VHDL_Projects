@@ -1,0 +1,26 @@
+|somador_completo
+a0 => pratica_5:G1.a
+b0 => pratica_5:G1.b
+ci => pratica_5:G2.a
+s1 <= pratica_5:G2.s
+c1 <= c1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_completo|pratica_5:G1
+a => s.IN0
+a => cf.IN0
+b => s.IN1
+b => cf.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|somador_completo|pratica_5:G2
+a => s.IN0
+a => cf.IN0
+b => s.IN1
+b => cf.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf.DB_MAX_OUTPUT_PORT_TYPE
+
+

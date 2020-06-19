@@ -1,0 +1,10 @@
+|pratica_3
+E[0] => Mux1.IN10
+E[1] => Mux0.IN5
+E[1] => Mux1.IN9
+E[2] => Mux0.IN4
+E[2] => Mux1.IN8
+S[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+S[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

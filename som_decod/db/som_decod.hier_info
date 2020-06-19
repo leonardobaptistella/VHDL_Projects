@@ -1,0 +1,67 @@
+|som_decod
+j0 => somador_completo:F1.a0
+k0 => somador_completo:F1.b0
+ti => somador_completo:F1.ci
+j1 => somador_completo:F2.a0
+k1 => somador_completo:F2.b0
+sai[0] << <GND>
+sai[1] << <GND>
+sai[2] << <GND>
+sai[3] << <GND>
+sai[4] << <GND>
+sai[5] << <GND>
+sai[6] << <GND>
+
+
+|som_decod|somador_completo:F1
+a0 => pratica_5:G1.a
+b0 => pratica_5:G1.b
+ci => pratica_5:G2.a
+s1 <= pratica_5:G2.s
+c1 <= c1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|som_decod|somador_completo:F1|pratica_5:G1
+a => s.IN0
+a => cf.IN0
+b => s.IN1
+b => cf.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|som_decod|somador_completo:F1|pratica_5:G2
+a => s.IN0
+a => cf.IN0
+b => s.IN1
+b => cf.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|som_decod|somador_completo:F2
+a0 => pratica_5:G1.a
+b0 => pratica_5:G1.b
+ci => pratica_5:G2.a
+s1 <= pratica_5:G2.s
+c1 <= c1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|som_decod|somador_completo:F2|pratica_5:G1
+a => s.IN0
+a => cf.IN0
+b => s.IN1
+b => cf.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|som_decod|somador_completo:F2|pratica_5:G2
+a => s.IN0
+a => cf.IN0
+b => s.IN1
+b => cf.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cf <= cf.DB_MAX_OUTPUT_PORT_TYPE
+
+

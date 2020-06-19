@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, G:/pratica_1/pratica_1.vhd
+source_file = 1, G:/pratica_1/db/pratica_1.cbx.xml
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = pratica_1
+instance = comp, \y~output\, y~output, pratica_1, 1
+instance = comp, \a~input\, a~input, pratica_1, 1
+instance = comp, \b~input\, b~input, pratica_1, 1
+instance = comp, \c~input\, c~input, pratica_1, 1
+instance = comp, \d~input\, d~input, pratica_1, 1
+instance = comp, \y~0\, y~0, pratica_1, 1

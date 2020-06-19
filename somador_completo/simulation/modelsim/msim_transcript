@@ -1,0 +1,64 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do somador_completo_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/somador_completo/pratica_5/pratica_5.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pratica_5
+# -- Compiling architecture a of pratica_5
+# vcom -93 -work work {G:/somador_completo/somador_completo.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity somador_completo
+# -- Compiling architecture estrutural of somador_completo
+# 
+vsim work.somador_completo(estrutural)
+# vsim work.somador_completo(estrutural) 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador_completo(estrutural)
+# Loading work.pratica_5(a)
+vsim work.somador_completo
+# vsim work.somador_completo 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.somador_completo(estrutural)
+# Loading work.pratica_5(a)
+add wave -position insertpoint  \
+sim:/somador_completo/a0
+add wave -position insertpoint  \
+sim:/somador_completo/b0
+add wave -position insertpoint  \
+sim:/somador_completo/ci
+add wave -position insertpoint  \
+sim:/somador_completo/s1
+add wave -position insertpoint  \
+sim:/somador_completo/c1
+add wave -position insertpoint  \
+sim:/somador_completo/s0
+add wave -position insertpoint  \
+sim:/somador_completo/c0
+add wave -position insertpoint  \
+sim:/somador_completo/c01
+force -freeze sim:/somador_completo/a0 1 0, 0 {50 ps} -r 100
+force -freeze sim:/somador_completo/b0 1 0, 0 {50 ps} -r 100
+noforce sim:/somador_completo/ci
+force -freeze sim:/somador_completo/ci 1 0, 0 {50 ps} -r 100
+run
+run
+run

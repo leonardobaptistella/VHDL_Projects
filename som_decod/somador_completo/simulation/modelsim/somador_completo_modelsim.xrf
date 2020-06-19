@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, G:/somador_completo/pratica_5/pratica_5.vhd
+source_file = 1, G:/somador_completo/somador_completo.vhd
+source_file = 1, G:/somador_completo/db/somador_completo.cbx.xml
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/12.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = somador_completo
+instance = comp, \s1~output\, s1~output, somador_completo, 1
+instance = comp, \c1~output\, c1~output, somador_completo, 1
+instance = comp, \ci~input\, ci~input, somador_completo, 1
+instance = comp, \b0~input\, b0~input, somador_completo, 1
+instance = comp, \a0~input\, a0~input, somador_completo, 1
+instance = comp, \G2|s~0\, G2|s~0, somador_completo, 1
+instance = comp, \c1~0\, c1~0, somador_completo, 1
