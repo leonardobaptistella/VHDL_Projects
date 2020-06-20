@@ -1,0 +1,9 @@
+|pratica_6
+T => process_0.IN0
+T => tmp.ENA
+Clock => tmp.CLK
+Reset => tmp.OUTPUTSELECT
+Enable => process_0.IN1
+Q1 <= tmp.DB_MAX_OUTPUT_PORT_TYPE
+
+

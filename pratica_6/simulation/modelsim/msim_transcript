@@ -1,0 +1,49 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pratica_6_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/Zenith/VHDL_Projects/pratica_6.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pratica_6
+# -- Compiling architecture Comportamental of pratica_6
+# 
+vsim work.pratica_6
+# vsim work.pratica_6 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pratica_6(comportamental)
+add wave -position insertpoint  \
+sim:/pratica_6/Clock
+add wave -position insertpoint  \
+sim:/pratica_6/tmp
+add wave -position insertpoint  \
+sim:/pratica_6/Q1
+add wave -position insertpoint  \
+sim:/pratica_6/Enable
+add wave -position insertpoint  \
+sim:/pratica_6/Reset
+add wave -position insertpoint  \
+sim:/pratica_6/T
+force -freeze sim:/pratica_6/Clock 1 0, 0 {12 ps} -r 25
+force -freeze sim:/pratica_6/Enable 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_6/Reset 1 0, 0 {100 ps} -r 200
+force -freeze sim:/pratica_6/T 1 0, 0 {75 ps} -r 150
+run
+run
+run
+run
+run
+run
+run
