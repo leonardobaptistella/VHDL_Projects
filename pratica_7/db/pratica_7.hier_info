@@ -1,0 +1,13 @@
+|pratica_7
+Data[0] => ~NO_FANOUT~
+Data[1] => ~NO_FANOUT~
+Data[2] => ~NO_FANOUT~
+Data[3] => ~NO_FANOUT~
+CLK => ~NO_FANOUT~
+CLR => ~NO_FANOUT~
+SAIDA[0] <= <GND>
+SAIDA[1] <= <GND>
+SAIDA[2] <= <GND>
+SAIDA[3] <= <GND>
+
+

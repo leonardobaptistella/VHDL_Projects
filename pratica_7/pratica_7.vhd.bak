@@ -1,0 +1,26 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY ContadorBinarioUm IS
+	PORT
+	(
+		Data	: IN	INTEGER RANGE 0 TO 15;
+		CLK	: IN	STD_LOGIC;
+		CLR	: IN	STD_LOGIC;
+		SAIDA	: OUT	INTEGER RANGE 0 TO 15
+	);	
+END ContadorBinarioUm;
+
+ARCHITECTURE PrimeiraParte OF ContadorBinarioUm IS
+	SIGNAL CONTADOR : INTEGER RANGE 0 TO 15;
+BEGIN
+
+	PROCESS (CLK, CLR)
+	BEGIN
+		IF CLR = '0' THEN
+			SAIDA <= 0;
+		ELSIF (CLK'EVENT AND CLK = '1') THEN
+			CONTADOR <= CONTADOR + 1;							
+		END IF;
+	END PROCESS;
+END PrimeiraParte;
