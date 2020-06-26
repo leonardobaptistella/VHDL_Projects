@@ -1,0 +1,72 @@
+# Reading C:/altera/12.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do pratica_8_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied c:\altera\12.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {G:/Zenith/VHDL_Projects/pratica_8/pratica_8.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1b Compiler 2012.04 Apr 27 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity pratica_8
+# -- Compiling architecture LogicFunc of pratica_8
+# 
+vsim work.pratica_8
+# vsim work.pratica_8 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pratica_8(logicfunc)
+add wave -position insertpoint  \
+sim:/pratica_8/A
+add wave -position insertpoint  \
+sim:/pratica_8/B
+add wave -position insertpoint  \
+sim:/pratica_8/S
+add wave -position insertpoint  \
+sim:/pratica_8/carry
+add wave -position insertpoint  \
+sim:/pratica_8/C_O
+add wave -position insertpoint  \
+sim:/pratica_8/C
+force -freeze sim:/pratica_8/A 1 0, 0 {50 ps} -r 100
+# Value length (1) does not equal array index length (4).
+# 
+# ** Error: (vsim-4011) Invalid force value: 1 0, 0 {50 ps}.
+# 
+force -freeze sim:/pratica_8/B 0 0, 1 {50 ps} -r 100
+# Value length (1) does not equal array index length (4).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0 0, 1 {50 ps}.
+# 
+run
+run
+force -freeze sim:/pratica_8/A(3) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/A(2) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/A(1) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/A(0) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/B(3) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pratica_8/B(2) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pratica_8/B(1) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/pratica_8/B(0) 1 0, 0 {50 ps} -r 100
+run
+run
+force -freeze sim:/pratica_8/S(3) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/S(2) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/S(1) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/S(0) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/carry(2) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/carry(3) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/carry(1) 1 0, 0 {50 ps} -r 100
+force -freeze sim:/pratica_8/carry(0) 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run

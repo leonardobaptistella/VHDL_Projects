@@ -1,0 +1,31 @@
+|pratica_8
+A[0] => ~NO_FANOUT~
+A[1] => S.IN0
+A[1] => carry.IN0
+A[1] => carry.IN0
+A[2] => S.IN0
+A[2] => carry.IN0
+A[2] => carry.IN1
+A[3] => S.IN0
+A[3] => carry.IN0
+A[3] => carry.IN1
+B[0] => ~NO_FANOUT~
+B[1] => S.IN1
+B[1] => carry.IN1
+B[1] => carry.IN0
+B[2] => S.IN1
+B[2] => carry.IN1
+B[2] => carry.IN1
+B[3] => S.IN1
+B[3] => carry.IN1
+B[3] => carry.IN1
+C => S.IN1
+C => carry.IN1
+C => carry.IN1
+C_O <= carry.DB_MAX_OUTPUT_PORT_TYPE
+S[0] <= <GND>
+S[1] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[2] <= S.DB_MAX_OUTPUT_PORT_TYPE
+S[3] <= S.DB_MAX_OUTPUT_PORT_TYPE
+
+
